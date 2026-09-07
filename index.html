@@ -10,19 +10,29 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body class="contact-page">
-        <div id="main">
+        <main id="main">
+
             <!-- Form section -->
-            <div class="contact-form-section">
+            <section class="contact-form-section">
                 <form>
-                    <h2 class="contact-form-heading">Reach <span>Out</span></h2>
-                    <div class="contact-form-intro">Curious about something? Complete these fields and "get in touch", as you humans say. 🤙</div>
-                    <input class="contact-input" type="text" placeholder="Full name" />
-                    <input class="contact-input" type="text" placeholder="Email" />
-                    <textarea class="contact-textarea" rows="4" cols="50" placeholder="Your message..."></textarea>
-                    <button class="contact-submit-button" type="button" onclick="submitForm()">Done 🎉</button>
+                    <h1 class="contact-form-heading">Reach <span>Out</span></h1>
+
+                    <p class="contact-form-intro">Curious about something? Complete these fields and "get in touch", as you humans say. 🤙</p>
+
+                    <label for="name">Full name</label>
+                    <input id="name" class="contact-input" type="text" placeholder="Michael Jackson"/>
+
+                    <label for="email">Email</label>
+                    <input id="email" class="contact-input" type="email" placeholder="mj@email.com"/>
+
+                    <label for="message">Your message</label>
+                    <textarea id="message" class="contact-textarea" rows="4" cols="50" placeholder="I'd like to know more about..."></textarea>
+
+                    <button class="contact-submit-button" type="button" onclick="submitForm()">Send messgae 🎉</button>
                 </form>
-                <img class="contact-image" src="images/connect.jpg" />
-            </div>
-        </div>
+
+                <img class="contact-image" src="images/connect.jpg" alt="A human hand and robot hand reaching towards each other."/>
+            </section>
+        </main>
     </body>
 </html>
